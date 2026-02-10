@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif, 'Times New Roman';
+}
+
+.frame {
+    border: 7px solid red;
+    padding: 1px;
+}
+
+.deck {
+    position: absolute
+}
+
+.deck img {
+    position: absolute;
+    width: 120px;
+}
+
+.deck img:hover {
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: 0 10px 20px black;
+    transform: scale(1.05);
+}
+
+.d1 {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.d2 {
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.d3 {
+    top: 40px;
+    left: 40px;
+    z-index: 3;
+}
+
+.d4 {
+    top: 65px;
+    left: 60px;
+    z-index: 4;
+}
+
+.d5 {
+    top: 88px;
+    left: 83px;
+    z-index: 5;
+}
+
+.d6 {
+    top: 115px;
+    left: 105px;
+    z-index: 6;
+}
+
+.d7 {
+    top: 135px;
+    left: 123px;
+    z-index: 7;
+}
+
+body {
+    background-color: orange;
+}
+
+.box {
+    position: absolute;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    font-size: 22px;
+    font-style: italic;
+    border: 6px solid white;
+}
+
+.b1 {
+    top: 70px;
+    width: 250px;
+    background-color: yellow;
+}
+
+.b2 {
+    top: 160px;
+    width: 350px;
+    background-color: magenta;
+}
+
+.b3 {
+    top: 250px;
+    width: 450px;
+    background-color: cyan;
+}
+
+.b4 {
+    top: 340px;
+    width: 550px;
+    background-color: blue;
+}
+
+.floating {
+    float: left;
+    margin-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal a,
+.vertical a {
+    display: block;
+    width: 100px;
+    height: 50px;
+    padding: 10px 15px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    background-color: #e0f7fa;
+}
+
+.horizontal li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.vertical li {
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: wheat;
+    font-family: Arial;
+    padding: 20px;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.title {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.topmenu {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.topmenu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.topmenu a:hover {
+    background-color: #555;
+}
+
+.para {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.roundbox {
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
