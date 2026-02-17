@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dropdown</title>
+<style>
+#menu {
+    display: none;
+    border: 1px solid black;
+    width: 120px;
+}
+</style>
+</head>
+
+<body>
+
+<button onclick="toggleMenu()">Menu</button>
+
+<div id="menu">
+<p>Option 1</p>
+<p>Option 2</p>
+<p>Option 3</p>
+</div>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "none") {
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
+

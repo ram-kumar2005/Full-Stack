@@ -1,0 +1,44 @@
+‘<!DOCTYPE html>
+<html>
+<head>
+<title>Hex Color Table</title>
+<style>
+table {
+    border-collapse: collapse;
+}
+td {
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+<h3>Hexadecimal Colour Codes</h3>
+
+<table>
+<tr>
+<td onmouseover="changeColor(this)" onmouseout="resetColor(this)">#FF0000</td>
+<td onmouseover="changeColor(this)" onmouseout="resetColor(this)">#00FF00</td>
+<td onmouseover="changeColor(this)" onmouseout="resetColor(this)">#0000FF</td>
+</tr>
+</table>
+
+<script>
+function changeColor(cell) {
+    cell.style.backgroundColor = cell.innerHTML;
+    cell.style.color = "white";
+}
+
+function resetColor(cell) {
+    cell.style.backgroundColor = "white";
+    cell.style.color = "black";
+}
+</script>
+
+</body>
+</html>
+

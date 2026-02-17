@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+li {
+    padding: 8px;
+    border: 1px solid black;
+    margin: 5px;
+    width: 120px;
+}
+</style>
+</head>
+
+<body>
+
+<ul>
+<li draggable="true">Item 1</li>
+<li draggable="true">Item 2</li>
+<li draggable="true">Item 3</li>
+</ul>
+
+<script>
+let dragged;
+
+document.addEventListener("dragstart", e => dragged = e.target);
+document.addEventListener("dragover", e => e.preventDefault());
+document.addEventListener("drop", e => {
+    if (e.target.tagName === "LI") {
+        e.target.before(dragged);
+    }
+});
+</script>
+
+</body>
+</html>
+

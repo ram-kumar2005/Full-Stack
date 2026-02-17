@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game of 15</title>
+<style>
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 20px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+<h3>15 Puzzle Game</h3>
+
+<table id="board"></table>
+
+<script>
+var tiles = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,""];
+tiles.sort(() => Math.random() - 0.5);
+
+var board = document.getElementById("board");
+
+for (let i = 0; i < 4; i++) {
+    let row = board.insertRow();
+    for (let j = 0; j < 4; j++) {
+        let cell = row.insertCell();
+        cell.innerHTML = tiles[i*4 + j];
+        cell.onclick = function() {
+            moveTile(this);
+        };
+    }
+}
+
+function moveTile(cell) {
+    let empty = document.querySelector("td:empty");
+    let r1 = cell.parentNode.rowIndex;
+    let c1 = cell.cellIndex;
+    let r2 = empty.parentNode.rowIndex;
+    let c2 = empty.cellIndex;
+
+    if (Math.abs(r1-r2) + Math.abs(c1-c2) == 1) {
+        empty.innerHTML = cell.innerHTML;
+        cell.innerHTML = "";
+    }
+}
+</script>
+
+</body>
+</html>
+

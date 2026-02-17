@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="openPopup()">Open Popup</button>
+
+<script>
+function openPopup() {
+    var popup = window.open("popup.html", "", "width=300,height=200");
+
+    if (popup == null || popup.closed) {
+        window.location.href = "error.html";
+    }
+}
+</script>
+
+</body>
+</html>
